@@ -13,10 +13,10 @@ def attendance_calculation():
         4. Total Number of Lectures/Lab(Slots) Done"""
 
     global required_slots
-    while int(input("\n\t\tEnter 0 or 1 to Continue with the input:\n\t\t")) == 0:
+    while int(input("\n\t\tEnter 0 to Continue or 1 to Halt the Program:\n\t\t")) == 0:
 
         # inputs...
-        min_attendance_required = int(input("\t\tEnter the Minimum Attendance Required in your College:\n\t\t"))
+        min_attendance_required = int(input("\t\tEnter the Minimum Attendance Criteria, Required in your College:\n\t\t"))
         present_slot = int(input("\t\tEnter the Number of your 'Present' Slots:\n\t\t"))        # 6
         total_slot = int(input("\t\tEnter the Total Number of Slots:\n\t\t"))              # 14
 
