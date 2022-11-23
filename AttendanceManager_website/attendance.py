@@ -29,11 +29,11 @@ def attendance_calculation(*args, **kwargs):
         Attendance_calc_formula = present_slot / total_slot * 100
         return Attendance_calc_formula
 
-    op = Element('output')
+    op1 = Element('output1')
     op2 = Element('output2')
-    op3 = Element('output3')
+    # op3 = Element('output3')
     
-    op2.write (f"Your Current Attendance is: {round(attendance_calc_formula(present_slot, total_slot), 3)} % \n")
+    op1.write (f"Your Current Attendance is: {round(attendance_calc_formula(present_slot, total_slot), 3)} % \n")
 
     
     while True:
@@ -55,11 +55,11 @@ def attendance_calculation(*args, **kwargs):
         # Comparing attendance percentage value with min_attendance_Required
 
         if attendance_calc_formula(present_slot, total_slot) == min_attendance_required:
-            op.write(f"You Require {required_slots} Slots more to reach 75% attendance <br> Then Your attendance will be: {attendance_calc_formula(present_slot, total_slot)} %")
+            op2.write(f"You Require {required_slots} Slots more to reach 75% attendance <br> Then Your attendance will be: {attendance_calc_formula(present_slot, total_slot)} %")
             required_slots = 0          # for again starting the counter from 0
             break
         elif attendance_calc_formula(present_slot - 1, total_slot - 1) > min_attendance_required:
-            op.write(f"Chill! You are NOT in Detention List:), You already Have Sufficient Attendance\n")
+            op2.write(f"Chill! You are NOT in Detention List:), You already Have Sufficient Attendance\n")
 
             # to tell user, how much more bunk he/she can do...
 
@@ -75,7 +75,7 @@ def attendance_calculation(*args, **kwargs):
                 # (13,14)->0->92.85, (13,15)->1->86.67, (13,16)->2->81.25, (13,17)->3->76.47, (13,18)->4->72.22
 
                 if attendance_calc_formula(updated_present_slot, updated_total_slot) <= min_attendance_required:
-                    op.write(f"You can Bunk {updated_required_slot - 1} lectures <br> Your Attendance then will be {round(attendance_calc_formula(updated_present_slot, updated_total_slot - 1), 3)} % <br> Then after you can fall under Detention List")
+                    op2.write(f"You can Bunk {updated_required_slot - 1} lectures <br> Your Attendance then will be {round(attendance_calc_formula(updated_present_slot, updated_total_slot - 1), 3)} % <br> Then after you can fall under Detention List")
                     break
             break
         else:
