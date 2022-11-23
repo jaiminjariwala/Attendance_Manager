@@ -50,6 +50,7 @@ def attendance_calculation():
             if attendance_calc_formula(present_slot, total_slot) == min_attendance_required:
                 print("\t\t***** You Require", required_slots, "Slots more to reach 75% attendance *****\n")
                 print("\t\t***** Then Your attendance will be: ", attendance_calc_formula(present_slot, total_slot))
+                required_slots = 0
                 break
             elif attendance_calc_formula(present_slot-1, total_slot-1) > min_attendance_required:
                 print("\t\t***** Chill! You are NOT in Detention List:), You already Have Sufficient Attendance *****\n")
