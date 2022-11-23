@@ -7,5 +7,15 @@ From the 3 inputs(viz. The attendance Criteria in your college, Present_Slot and
 
 # I have written my code in Python hence require Python(.py extension) installed in System for making changes if any!
 
-<img width="598" alt="image" src="https://user-images.githubusercontent.com/70468773/203104930-d0244b4e-da16-4ea0-9848-d96060265976.png">
-<img width="469" alt="image" src="https://user-images.githubusercontent.com/70468773/203105560-2783405f-e781-4925-bd1e-a3ede7d847e6.png">
+<img width="493" alt="image" src="https://user-images.githubusercontent.com/70468773/203589273-79e8e9e4-0eac-47a2-9930-3cc17ecd97de.png">
+<hr>
+<img width="601" alt="image" src="https://user-images.githubusercontent.com/70468773/203589619-d60620c3-d253-45ca-8d79-32ebf76ed212.png">
+
+# With Different Test-Cases...
+
+<hr>
+<img width="928" alt="image" src="https://user-images.githubusercontent.com/70468773/203587462-e20e9307-2c85-4199-989c-dcb9c70841fb.png">
+<hr>
+<img width="921" alt="image" src="https://user-images.githubusercontent.com/70468773/203587654-fe2eda93-6c97-44d9-9425-fb41e9069b40.png">
+<hr>
+
