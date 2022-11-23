@@ -29,9 +29,13 @@ def attendance_calculation(*args, **kwargs):
         Attendance_calc_formula = present_slot / total_slot * 100
         return Attendance_calc_formula
 
-    print (f"Your Current Attendance is: {round(attendance_calc_formula(present_slot, total_slot), 3)} % \n")
-
     op = Element('output')
+    op2 = Element('output2')
+    op3 = Element('output3')
+    
+    op2.write (f"Your Current Attendance is: {round(attendance_calc_formula(present_slot, total_slot), 3)} % \n")
+
+    
     while True:
 
         # for testing, let's take... 6 present slots and 14 total slots
@@ -42,6 +46,7 @@ def attendance_calculation(*args, **kwargs):
         # counting for how many more slots require, to reach the minimum attendance requirement for your college
 
         required_slots = required_slots + 1
+        # op3.write(f"For Increasing slots_function right now required slots is {required_slots} <br>")     # wrote for debugging purpose!
 
         # calling attendance_calc_formula function...
 
@@ -51,6 +56,7 @@ def attendance_calculation(*args, **kwargs):
 
         if attendance_calc_formula(present_slot, total_slot) == min_attendance_required:
             op.write(f"You Require {required_slots} Slots more to reach 75% attendance <br> Then Your attendance will be: {attendance_calc_formula(present_slot, total_slot)} %")
+            required_slots = 0          # for again starting the counter from 0
             break
         elif attendance_calc_formula(present_slot - 1, total_slot - 1) > min_attendance_required:
             op.write(f"Chill! You are NOT in Detention List:), You already Have Sufficient Attendance\n")
@@ -75,4 +81,4 @@ def attendance_calculation(*args, **kwargs):
         else:
             continue
 
-# ----------------------------------------------- OVER ------------------------------------------------------
+#-----------------------------------------------OVER---------------------------------------
