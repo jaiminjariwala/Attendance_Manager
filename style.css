@@ -1,0 +1,51 @@
+
+.main-container{
+  border-radius: 7px;
+  border:2px white solid;
+  height:700px;
+  margin:30px 10px;;
+}
+.heading{
+  font-family: 'Montserrat', sans-serif;
+  margin-left: 6px;
+}
+.subHeading{
+  margin:10px 6px;
+  font-size: 20px;
+  font-family: 'Montserrat', sans-serif;
+}
+.link{
+  text-decoration: underline;
+  color: black;
+}
+.details{
+  margin:34px 6px;
+}
+label{
+  font-size: 18px;
+  font-family: 'Albert Sans';
+}
+input{
+  border-radius:5px;
+  border:1px black solid;
+  padding:5px;
+}
+#submitBtn{
+  color: white;
+  background-color:black;
+  border-radius: 8px;
+  font-family: 'Albert Sans';
+  height: 40px;
+}
+
+::placeholder {
+  padding:5px;
+}
+
+.output{
+  font-size: 20px;
+  font-family: 'Albert Sans';
+  margin-top:20px;
+  color: black;
+  font-weight: bold;
+}
